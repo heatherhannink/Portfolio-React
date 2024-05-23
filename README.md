@@ -2,6 +2,8 @@
 
 My react portfolio of my latest works.
 
+Deployed link to Netlify- https://chimerical-sunflower-2e059d.netlify.app
+
 
 collaberated with classmates and tutors
 

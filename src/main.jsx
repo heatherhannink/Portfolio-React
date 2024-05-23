@@ -1,13 +1,46 @@
-import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
-import { ChakraProvider } from '@chakra-ui/react'
+// Bringing in the required imports from 'react-router-dom' to set up application routing behavior
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
+// import 'bootstrap/dist/css/bootstrap.min.css'
+
+import App from './App';
+import Error from './pages/Error';
+// import Contact from './pages/Contact';
+import About from './pages/About';
+import Portfolio from './pages/Portfolio';
+import Resume from './pages/Resume';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />,
+    errorElement: <Error />,
+    children: [
+      {
+        index: true,
+        element: <About />,
+      },
+      {
+        path: '/about',
+        element: <About />,
+      },
+      {
+        path: '/portfolio',
+        element: <Portfolio />,
+      },
+      {
+        path: '/resume',
+        element: <Resume />,
+      },
+      // {
+      //   path: '/contact',
+      //   element: <Contact />,
+      // }
+    ],
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <ChakraProvider>
-    <App />
-    </ChakraProvider>
-  </React.StrictMode>,
-)
+  <RouterProvider router={router} />
+);

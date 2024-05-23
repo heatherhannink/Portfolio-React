@@ -1,16 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+// import { Header } from './components/Header'
+import { Outlet } from 'react-router-dom'
+// import Footer from './components/Footer'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <Box bg='tomato' w='100%' p={4} color='white'>
-  This is the Box
-</Box>
- )
+    <>
+      {/* <Header></Header> */}
+      <main>
+        <Outlet />
+      </main>
+      {/* <Footer></Footer> */}
+    </>
+  )
 }
 
 export default App
