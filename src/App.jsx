@@ -1,16 +1,16 @@
 import './App.css'
-// import { Header } from './components/Header'
+import { Header } from './components/Header'
 import { Outlet } from 'react-router-dom'
-// import Footer from './components/Footer'
+import Footer from './components/Footer'
 
 function App() {
   return (
     <>
-      {/* <Header></Header> */}
+      <Header></Header>
       <main>
         <Outlet />
       </main>
-      {/* <Footer></Footer> */}
+      <Footer></Footer>
     </>
   )
 }
