@@ -15,7 +15,7 @@ export default function About() {
           alt= 'Heather'
         />
 
-        <p> This portfolio Rocks
+        <p> I am a military Vet. Was military police for 8.5 years. Currently am a stay at home mom but have done various side jobs during the last 9 years. Fell in love with full stack coding and haven't looked back since. 
 
         </p>
 
