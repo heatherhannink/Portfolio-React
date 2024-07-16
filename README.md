@@ -2,7 +2,7 @@
 
 My react portfolio of my latest works.
 
-Deployed link to Netlify- https://chimerical-sunflower-2e059d.netlify.app
+Deployed link to Netlify- 
 Git Hub- https://github.com/heatherhannink/Portfolio-React
 
 collaberated with classmates and tutors
